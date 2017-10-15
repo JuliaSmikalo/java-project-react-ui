@@ -159,14 +159,22 @@ module.exports = {
           // In production, we use a plugin to extract that CSS to a file, but
           // in development "style" loader enables hot editing of CSS.
           {
-            test: /\.css$/,
+            test: /\.scss$/,
             use: [
-              require.resolve('style-loader'),
+              {
+                loader: require.resolve('style-loader'),
+                options: {sourceMap: true}
+              },
               {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  sourceMap: true
                 },
+              },
+              {
+                loader: require.resolve('sass-loader'),
+                options: {sourceMap: true}
               },
               {
                 loader: require.resolve('postcss-loader'),
@@ -174,6 +182,7 @@ module.exports = {
                   // Necessary for external CSS imports to work
                   // https://github.com/facebookincubator/create-react-app/issues/2677
                   ident: 'postcss',
+                  sourceMap: true,
                   plugins: () => [
                     require('postcss-flexbugs-fixes'),
                     autoprefixer({
@@ -200,7 +209,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.scss$/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
