@@ -1,0 +1,6 @@
+@import "../../styles/_colors";
+.content {
+  &__header {
+    border-bottom: 1px solid $gray-light;
+  }
+}

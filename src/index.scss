@@ -1,5 +1,17 @@
-body {
+@import "~normalize.css";
+
+@import "styles/themes/flatly/_variables";
+@import "~bootstrap/dist/css/bootstrap.css";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "styles/themes/flatly/_bootswatch.scss";
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: sans-serif;
 }

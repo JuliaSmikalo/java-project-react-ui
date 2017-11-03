@@ -1,0 +1,23 @@
+@import "../../styles/_colors";
+
+.related-item {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+  &__score {
+    flex: 0 0 30px;
+    text-align: center;
+    padding: 5px;
+    background: $gray-lighter;
+
+    &--approved {
+      background: $brand-success;
+      color: white;
+    }
+  }
+
+  &__header {
+    padding-left: 10px;
+  }
+}

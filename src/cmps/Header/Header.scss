@@ -1,0 +1,15 @@
+@import "../../styles/_grid";
+@import "../../styles/_colors";
+
+.header {
+  &__logo-link {
+    padding: 0;
+  }
+
+  &__logo {
+    height: 40px;
+    fill: $brand-success;
+    margin: 10px 20px;
+    vertical-align: bottom;
+  }
+}

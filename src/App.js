@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import BEM from 'helpers/bem';
+import Header from 'cmps/Header/Header';
+import Content from 'cmps/Content/Content';
 import './App.scss';
+import Footer from './cmps/Footer/Footer';
 
-class App extends Component {
+const bem = new BEM('App');
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className={bem}>
+        <Header/>
+        <Content/>
+        <Footer/>
       </div>
     );
   }
 }
-
-export default App;

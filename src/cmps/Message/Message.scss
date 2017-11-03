@@ -1,0 +1,41 @@
+@import "../../styles/_colors";
+
+.message {
+  padding-top: 15px;
+
+  &__rating {
+    text-align: center;
+    padding: 10px 20px 10px 10px;
+
+    font-size: 3rem;
+
+    &-up,
+    &-down {
+      text-indent: -9999em;
+      font-size: 1px;
+      color: transparent;
+      content: '';
+      height: 0;
+      width: 0;
+      border: 20px solid transparent;
+      background: transparent;
+      display: block;
+      margin: 0 auto;
+    }
+    &-up {
+      border-bottom-color: $gray;
+      border-top-width: 0;
+
+      &:active {
+        border-bottom-color: $gray-light;
+      }
+    }
+    &-down {
+      border-top-color: $gray;
+      border-bottom-width: 0;
+      &:active {
+        border-top-color: $gray-light;
+      }
+    }
+  }
+}
