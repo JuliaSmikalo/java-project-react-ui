@@ -43,7 +43,7 @@ export default class Header extends Component {
           </Navbar.Form>
           <Navbar.Form pullRight>
             {' '}
-            <Button type="submit">Sign In</Button>
+            <Button type="submit">Sign Up</Button>
           </Navbar.Form>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">Login</NavItem>

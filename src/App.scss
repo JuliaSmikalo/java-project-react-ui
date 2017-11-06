@@ -3,4 +3,7 @@
 @import "~susy/sass/susy";
 
 .App {
+  position: relative;
+  padding-bottom: 200px;
+  height: 100%
 }
