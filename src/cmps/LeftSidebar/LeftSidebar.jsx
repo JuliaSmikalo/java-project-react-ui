@@ -5,12 +5,10 @@ import Message from '../Message/Message';
 
 const bem = new BEM('left-sidebar');
 
-export default class Content extends Component {
+export default class LeftSidebar extends Component {
   render() {
     return (
-      <section className={bem.mix('col-md-9')}>
-        <Message/>
-      </section>
+      <Message/>
     );
   }
 }

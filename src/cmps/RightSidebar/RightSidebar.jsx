@@ -5,10 +5,10 @@ import RelatedItem from '../RelatedItem/RelatedItem'
 
 const bem = new BEM('right-sidebar');
 
-export default class Content extends Component {
+export default class RightSidebar extends Component {
   render() {
     return (
-      <sidebar className={bem.mix('col-md-3')}>
+      <sidebar className={bem}>
         <p>
           asked <strong>today</strong>
         </p>
