@@ -9,9 +9,9 @@ export default class MainMenu extends Component {
   render() {
     return (
       <Nav activeKey={1}>
-        <NavItem eventKey={1} href="#">Questions</NavItem>
-        <NavItem eventKey={2} href="#">Tags</NavItem>
-        <NavItem eventKey={3} href="#">People</NavItem>
+        <NavItem eventKey={1} href="/">Questions</NavItem>
+        <NavItem eventKey={2} href="/">Tags</NavItem>
+        <NavItem eventKey={3} href="/">People</NavItem>
       </Nav>
     )
   }

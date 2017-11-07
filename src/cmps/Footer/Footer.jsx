@@ -14,9 +14,9 @@ export default class Footer extends Component {
           <Row className="show-grid">
             <Col md={12}>
               <Nav bsStyle="pills" activeKey={1}>
-                <NavItem eventKey={1} href="/home">Home</NavItem>
-                <NavItem eventKey={2} title="Item">Question</NavItem>
-                <NavItem eventKey={3}>People</NavItem>
+                <NavItem eventKey={1} href="/">Home</NavItem>
+                <NavItem eventKey={2} href='/'>Question</NavItem>
+                <NavItem eventKey={3} href='/'>People</NavItem>
               </Nav>
               &copy; Copyright 2017 – Made by Julia Smikalo
             </Col>

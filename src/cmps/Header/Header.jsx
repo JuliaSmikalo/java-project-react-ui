@@ -12,7 +12,7 @@ export default class Header extends Component {
       <Navbar className={bem.toString()}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" className={bem.elem('logo-link').toString()}>
+            <a href="/" className={bem.elem('logo-link').toString()}>
               <svg className={bem.elem('logo')} xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000">
                 <g>
                   <path
@@ -46,7 +46,7 @@ export default class Header extends Component {
             <Button type="submit">Sign Up</Button>
           </Navbar.Form>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">Login</NavItem>
+            <NavItem eventKey={1} href="/login">Login</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
