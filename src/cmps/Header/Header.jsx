@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, FormControl, FormGroup} from 'react-bootstrap';
+import {Button, Navbar, Nav, NavItem, FormControl, FormGroup} from 'react-bootstrap';
 import BEM from 'helpers/bem';
-import MainMenu from 'cmps/MainMenu/MainMenu.jsx';
+import MainMenu from '../MainMenu/MainMenu.jsx';
+import {Link} from 'react-router-dom';
+import links from '../../configs/links';
 import './Header.scss';
 
 const bem = new BEM('header');
@@ -12,7 +14,7 @@ export default class Header extends Component {
       <Navbar className={bem.toString()}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/" className={bem.elem('logo-link').toString()}>
+            <Link to={links.home()} className={bem.elem('logo-link').toString()}>
               <svg className={bem.elem('logo')} xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000">
                 <g>
                   <path
@@ -31,7 +33,7 @@ export default class Header extends Component {
                     d="M377.5,473h-81.7c-29.7,0-61.3,21.3-61.3,60.8c0,1.3,4.6,131.9,77.6,131.9h48.9c73.1,0,77.6-130.6,77.6-131.9C438.8,494.3,407.2,473,377.5,473z"/>
                 </g>
               </svg>
-            </a>
+            </Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
@@ -43,10 +45,10 @@ export default class Header extends Component {
           </Navbar.Form>
           <Navbar.Form pullRight>
             {' '}
-            <Button type="submit">Sign Up</Button>
+            <Button type="submit" href={links.signup()}>Sign Up</Button>
           </Navbar.Form>
           <Nav pullRight>
-            <NavItem eventKey={1} href="/login">Login</NavItem>
+            <NavItem eventKey={1} href={links.login()}>Login</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

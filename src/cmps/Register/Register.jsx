@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import BEM from 'helpers/bem';
 import {FormGroup, ControlLabel, FormControl, Col, Button, Form, Row, Panel} from 'react-bootstrap';
-import links from '../../configs/links';
 import PageHeader from '../PageHeader/PageHeader';
+import links from '../../configs/links';
 import {Link} from 'react-router-dom';
-import './Login.scss';
+import './Register.scss';
 
-const bem = new BEM('login');
+const bem = new BEM('register');
 
-export default class Login extends Component {
+export default class Register extends Component {
   render() {
     return (
       <div className={bem}>
-        <PageHeader>Login to the system</PageHeader>
+        <PageHeader>Registration</PageHeader>
         <section className={bem.elem('form')}>
           <Form horizontal>
             <Row>
@@ -34,12 +34,20 @@ export default class Login extends Component {
                       <FormControl type='password'></FormControl>
                     </Col>
                   </FormGroup>
+                  <FormGroup controlId='password'>
+                    <Col componentClass={ControlLabel} sm={2}>
+                      Confirm Password
+                    </Col>
+                    <Col sm={10}>
+                      <FormControl type='password'></FormControl>
+                    </Col>
+                  </FormGroup>
                   <FormGroup>
                     <Col smOffset={2} sm={10}>
                       <Button type="submit">
-                        Login
+                        Sign Up
                       </Button>
-                      &nbsp;or <Link to={links.signup()}>Sign Up</Link>
+                      &nbsp;or <Link to={links.login()}>Login</Link>
                     </Col>
                   </FormGroup>
                 </Panel>

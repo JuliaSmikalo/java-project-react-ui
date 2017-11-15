@@ -1,0 +1,36 @@
+.questions-list {
+    &__question {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    &__ratings {
+        display: flex;
+    }
+
+    &__rating {
+        margin-right: 10px;
+        text-align: center;
+        padding:5px;
+    }
+    &__rating-value {
+        font-size: 2rem;
+    }
+
+    &__header-link {
+        font-size: 2rem;
+    }
+
+    &__details {
+     margin-left: 10px;
+        overflow: hidden;
+    }
+
+    &__text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
