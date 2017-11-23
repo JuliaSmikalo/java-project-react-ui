@@ -19,23 +19,23 @@ export default class Login extends Component {
               <Col md={6} mdOffset={3}>
                 <Panel>
                   <FormGroup controlId='email'>
-                    <Col componentClass={ControlLabel} sm={2}>
+                    <Col componentClass={ControlLabel} sm={4}>
                       Email
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={8}>
                       <FormControl type='email'></FormControl>
                     </Col>
                   </FormGroup>
                   <FormGroup controlId='password'>
-                    <Col componentClass={ControlLabel} sm={2}>
+                    <Col componentClass={ControlLabel} sm={4}>
                       Password
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={8}>
                       <FormControl type='password'></FormControl>
                     </Col>
                   </FormGroup>
                   <FormGroup>
-                    <Col smOffset={2} sm={10}>
+                    <Col smOffset={4} sm={8}>
                       <Button type="submit">
                         Login
                       </Button>
