@@ -1,4 +1,78 @@
-# REST API:
+# React UI for question system
+
+### Base urls
+
+#### Getters
+
+* `/api/login`
+* `/api/profile`
+* `/api/users`
+* `/api/users/{user-id}`
+* `/api/questions`
+* `/api/questions/{question-id}` -- short info
+* `/api/questions-with-answers/{question-id}` -- question with all answers
+* `/api/tags`
+* `/api/tags/{tag-id}`
+
+#### Setters
+
+* `/api/register`
+* `/api/update-profile`
+* `/api/users/{user-id}/remove`
+* `/api/questions/{question-id}/remove`
+* `/api/questions/{question-id}/edit`
+* `/api/questions/{question-id}/rating-up`
+* `/api/questions/{question-id}/rating-down`
+* `/api/questions/{question-id}/mark-best-answer` (Answer ID in POST body)
+* `/api/answers/{answer-id}/remove`
+* `/api/answers/{answer-id}/edit`
+* `/api/answers/{answer-id}/rating-up`
+* `/api/answers/{answer-id}/rating-down`
+* `/api/tags/{tag-id}/remove`
+* `/api/tags/{tag-id}/edit`
+
+### Entries
+
+##### User
+
+* Id
+* Name
+* Email
+* Password
+* Photo (can be loaded from Gravatar or AvatarAPI.com)
+* Registration date
+* Rating (sum all ratings of all his questions and answers)
+* Count of profile views
+
+##### Tags
+
+* Name (lowercase) (id)
+* Description
+* Count of tagged questions
+
+##### Question
+
+* Id
+* Title
+* Text
+* List of tags  (foreign keys to Tag names)
+* Author
+* Publishing date
+* Rating
+* Count of views
+* List of answers
+* Best Answer (foreign key to Answer)
+
+##### Answer
+
+* Id
+* Text
+* Author (foreign key to User)
+* Rating
+* Publish date
+
+## REST API:
+
 #### HTTP Codes:
 * 2xx - ok
 * 3xx - redirect
@@ -30,7 +104,7 @@ declare type LoginRequest = {
 ```JavaScript
 declare type LoginResponse = {
     success: true,
-    token: string
+    data: string // Token
 } | ErrorResponse
 ```
 
@@ -55,7 +129,7 @@ declare type Profile = {
                            
 declare type ProfileResponse = {
     success: true,
-    profile: Profile
+    data: Profile
 } | ErrorResponse
 ```
 
@@ -102,7 +176,7 @@ declare type UploadProfilePhotoResponse = {success: true} | ErrorResponse
 ```JavaScript
 declare type SpecificProfileResponse = {
     success: true,
-    profiles: Array<Profile>
+    data: Array<Profile>
 } | ErrorResponse
 ```
 
@@ -118,10 +192,10 @@ declare type SpecificProfileResponse = {
 declare type QuestionsRequest = undefined
 ```
 ```JavaScript
-declare type Comment = {
-  text: string
-  rating: number
-}
+// declare type Comment = {
+//   text: string
+//   rating: number
+// }
 
 declare type Message = {
   rating: number,
@@ -129,7 +203,7 @@ declare type Message = {
   title: string,
   text: string,
   authorUuid: string,
-  comments: Array<Comment>,
+  // comments: Array<Comment>,
   tags?: Array<String>
 }
 ```
@@ -137,7 +211,7 @@ declare type Message = {
 ```JavaScript
 declare type QuestionResponse = {
   success: true,
-  question: Message
+  body: Message
 } | ErrorResponse
 ```
 
