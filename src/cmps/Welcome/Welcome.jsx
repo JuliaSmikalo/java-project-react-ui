@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import BEM from '../../helpers/bem';
-import './Welcome.scss';
 import links from '../../configs/links';
+import {Link} from 'react-router-dom';
 import {Button} from 'react-bootstrap';
+import './Welcome.scss';
 
 
 const bem = new BEM('welcome');
@@ -18,10 +19,9 @@ export default class Welcome extends Component {
           Feel free to sign up and ask any question
         </div>
         <div className={bem.elem('right')}>
-          <Button type="submit" bsStyle="success" href={links.signup()}>
+          <Link to={links.signup()} className='btn btn-success'>
             Sign Up For Free
-          </Button>
-
+          </Link>
         </div>
       </div>
     );
