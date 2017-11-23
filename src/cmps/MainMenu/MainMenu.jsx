@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
-import {Nav, NavItem} from 'react-bootstrap';
 import links from '../../configs/links';
+import {Link, withRouter} from 'react-router-dom';
 
 
-export default class MainMenu extends Component {
+class MainMenu extends Component {
   render() {
+    const {location: {pathname}} = this.props;
+
     return (
-      <Nav activeKey={1}>
-        <NavItem eventKey={1} href={links.home()}>Questions</NavItem>
-        <NavItem eventKey={2} href={links.home()}>Tags</NavItem>
-        <NavItem eventKey={3} href={links.home()}>People</NavItem>
-      </Nav>
+      <ul className="nav navbar-nav">
+        <li role="presentation" className={pathname === links.allQuestions() ? 'active' : ''}>
+          <Link to={links.allQuestions()}>Questions</Link>
+        </li>
+        <li role="presentation" className={pathname === links.allTags() ? 'active' : ''}>
+          <Link to={links.allTags()}>Tags</Link>
+        </li>
+        <li role="presentation" className={pathname === links.allUsers() ? 'active' : ''}>
+          <Link to={links.allUsers()}>People</Link>
+        </li>
+      </ul>
     )
   }
 }
+
+export default withRouter(MainMenu);

@@ -1,24 +1,34 @@
 import React, {Component} from 'react';
-import {Nav, NavItem, Grid, Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import BEM from 'helpers/bem';
 import links from '../../configs/links';
+import {Link, withRouter} from 'react-router-dom';
 import './Footer.scss';
 
 const bem = new BEM('footer');
 
-export default class Footer extends Component {
+class Footer extends Component {
 
   render() {
+    const {location: {pathname}} = this.props;
+
+
     return (
       <footer className={bem}>
         <Grid>
           <Row className="show-grid">
             <Col md={12}>
-              <Nav bsStyle="pills" activeKey={1}>
-                <NavItem eventKey={1} href={links.home()}>Home</NavItem>
-                <NavItem eventKey={2} href={links.home()}>Question</NavItem>
-                <NavItem eventKey={3} href={links.home()}>People</NavItem>
-              </Nav>
+              <ul className="nav nav-pills">
+                <li role="presentation" className={pathname === links.allQuestions() ? 'active' : ''}>
+                  <Link to={links.allQuestions()}>Questions</Link>
+                </li>
+                <li role="presentation" className={pathname === links.allTags() ? 'active' : ''}>
+                  <Link to={links.allTags()}>Tags</Link>
+                </li>
+                <li role="presentation" className={pathname === links.allUsers() ? 'active' : ''}>
+                  <Link to={links.allUsers()}>People</Link>
+                </li>
+              </ul>
               &copy; Copyright 2017 – Made by Julia Smikalo
             </Col>
           </Row>
@@ -27,3 +37,5 @@ export default class Footer extends Component {
     )
   }
 }
+
+export default withRouter(Footer);
