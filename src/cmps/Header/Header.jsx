@@ -45,11 +45,13 @@ export default class Header extends Component {
           </Navbar.Form>
           <Navbar.Form pullRight>
             {' '}
-            <Button type="submit" href={links.signup()}>Sign Up</Button>
+            <Link to={links.signup()} className="btn btn-default">Sign Up</Link>
           </Navbar.Form>
-          <Nav pullRight>
-            <NavItem eventKey={1} href={links.login()}>Login</NavItem>
-          </Nav>
+          <ul className="nav navbar-nav navbar-right">
+            <li role="presentation">
+              <Link to={links.login()}>Login</Link>
+            </li>
+          </ul>
         </Navbar.Collapse>
       </Navbar>
     )
