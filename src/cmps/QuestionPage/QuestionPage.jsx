@@ -14,7 +14,15 @@ export default class QuestionPage extends Component {
   state = {}
 
   componentDidMount() {
-    fetcher(api.question('1'))
+    this.fetchQuestion(this.props.match.params.id);
+  }
+
+  componentWillReceiveProps(newProps) {
+    this.fetchQuestion(newProps.match.params.id);
+  }
+
+  fetchQuestion(questionId) {
+    fetcher(api.question(questionId))
       .then(question => this.setState({question: question}))
       .catch(error => console.log('error', error));
   }
@@ -24,19 +32,19 @@ export default class QuestionPage extends Component {
       {answers = [], title, ...questionMessage} = question;
 
     return (
-      <div className={bem}>
+      <div className={bem} id={`question-${question.id}`}>
         <PageHeader>
           {title}
         </PageHeader>
         <Row>
           <Col md={9}>
-            <Message {...questionMessage}/>
+            <Message {...questionMessage} isQuestion={true}/>
             {answers.map((answer, i) =>
               <Message {...answer} key={i}/>
             )}
           </Col>
           <Col md={3}>
-            <RightSidebar/>
+            <RightSidebar views={question.views} published={question.published}/>
           </Col>
         </Row>
       </div>
