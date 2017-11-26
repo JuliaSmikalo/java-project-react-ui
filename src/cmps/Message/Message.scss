@@ -63,23 +63,4 @@
   &__footer {
     display: flex;
   }
-
-  &__author {
-    margin-left: auto;
-    padding: 10px;
-    //background-color: $gray-lighter;
-    display: flex;
-    font-size: 1.2rem;
-
-    &-image {
-      flex: 1 1 40px;
-      margin-right: 10px;
-
-      &,
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-  }
 }
