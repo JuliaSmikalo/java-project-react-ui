@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BEM from 'helpers/bem';
+import BEM from '../../helpers/bem';
 import {FormGroup, ControlLabel, FormControl, Col, Button, Form, Row, Panel} from 'react-bootstrap';
 import PageHeader from '../PageHeader/PageHeader';
 import links from '../../configs/links';

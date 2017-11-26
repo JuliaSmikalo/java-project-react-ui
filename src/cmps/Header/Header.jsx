@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Button, Navbar, Nav, NavItem, FormControl, FormGroup} from 'react-bootstrap';
-import BEM from 'helpers/bem';
+import {Navbar, FormControl, FormGroup} from 'react-bootstrap';
+import BEM from '../../helpers/bem';
 import MainMenu from '../MainMenu/MainMenu.jsx';
 import {Link} from 'react-router-dom';
 import links from '../../configs/links';
@@ -37,7 +37,9 @@ export default class Header extends Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
+
           <MainMenu/>
+
           <Navbar.Form pullLeft>
             <FormGroup>
               <FormControl type="text" placeholder="Search"/>

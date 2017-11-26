@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BEM from 'helpers/bem';
+import BEM from '../../helpers/bem';
 import './PageHeader.scss';
 
 const bem = new BEM('page-header-a');

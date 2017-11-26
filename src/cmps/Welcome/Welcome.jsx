@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import BEM from '../../helpers/bem';
 import links from '../../configs/links';
 import {Link} from 'react-router-dom';
-import {Button} from 'react-bootstrap';
 import './Welcome.scss';
 
 

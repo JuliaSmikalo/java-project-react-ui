@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import BEM from 'helpers/bem';
+import BEM from '../../helpers/bem';
 import links from '../../configs/links';
 import {Link, withRouter} from 'react-router-dom';
 import './Footer.scss';

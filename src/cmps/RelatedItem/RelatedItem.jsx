@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BEM from 'helpers/bem';
+import BEM from '../../helpers/bem';
 import {Link} from 'react-router-dom';
 import './RelatedItem.scss';
 
