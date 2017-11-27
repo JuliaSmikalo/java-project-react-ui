@@ -10,7 +10,7 @@ const bem = new BEM('author');
 export default class User extends Component {
 
   render() {
-    const {authorUuid, published, isQuestion, answers, questions} = this.props;
+    const {authorUuid, published, isQuestion, answers, questions, name} = this.props;
 
     return (
       <div className={bem}>
@@ -20,7 +20,7 @@ export default class User extends Component {
         </div>
         <div className={bem.elem('details')}>
           <div className={bem.elem('name')}>
-            <Link to={links.userProfile(1)}>John Smith ({authorUuid})</Link>
+            <Link to={links.userProfile(1)}>{name || 'John Smith'} ({authorUuid})</Link>
           </div>
           {published && <div className={bem.elem('time')}>
             {isQuestion ? 'asked' : 'answered'}&nbsp;
@@ -28,6 +28,7 @@ export default class User extends Component {
           </div>}
           {(answers ||  questions) && <div className={bem.elem('time')}>
             {answers || 0} answers,
+            {' '}
             {questions || 0} questions
           </div>}
         </div>

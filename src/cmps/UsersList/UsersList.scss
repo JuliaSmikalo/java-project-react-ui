@@ -1,0 +1,15 @@
+@import "../../styles/_colors";
+
+.users-list {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__author {
+    flex: 1 0 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid $gray-lighter
+  }
+}
