@@ -3,10 +3,10 @@ const links = {
   login: () => '/login',
   signup: () => '/signup',
   allUsers: () => `/users`,
+  userProfile: (id) => `/users/${id}`,
   allTags: () => `/tags`,
   allQuestions: () => `/questions`,
-  question: (id) => `/question/${id}`,
-  userProfile: (id) => `/user/${id}`
+  question: (id) => `/questions/${id}`
 };
 
 export default links;

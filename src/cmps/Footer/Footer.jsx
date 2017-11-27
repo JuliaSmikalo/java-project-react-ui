@@ -19,13 +19,13 @@ class Footer extends Component {
           <Row className="show-grid">
             <Col md={12}>
               <ul className="nav nav-pills">
-                <li role="presentation" className={pathname === links.allQuestions() ? 'active' : ''}>
+                <li role="presentation" className={pathname.startsWith(links.allQuestions()) ? 'active' : ''}>
                   <Link to={links.allQuestions()}>Questions</Link>
                 </li>
-                <li role="presentation" className={pathname === links.allTags() ? 'active' : ''}>
+                <li role="presentation" className={pathname.startsWith(links.allTags()) ? 'active' : ''}>
                   <Link to={links.allTags()}>Tags</Link>
                 </li>
-                <li role="presentation" className={pathname === links.allUsers() ? 'active' : ''}>
+                <li role="presentation" className={pathname.startsWith(links.allUsers()) ? 'active' : ''}>
                   <Link to={links.allUsers()}>People</Link>
                 </li>
               </ul>
