@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "body": {
+    "rating": -1,
+    "approved": false,
+    "title": "Long title 2",
+    "text": "Very long title 2",
+    "author": {
+      "id": 1,
+      "firstName": "Jesica",
+      "lastName": "Kilomdo",
+      "email": "example@email.com"
+    },
+    "tags": ["ultricies", "222", "3"],
+    "published": "2017-11-21T13:05:13.987Z"
+  }
+}

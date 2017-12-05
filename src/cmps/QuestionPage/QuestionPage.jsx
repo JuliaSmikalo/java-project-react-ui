@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import BEM from '../../helpers/bem';
 import RightSidebar from '../RightSidebar/RightSidebar'
 import Message from '../Message/Message';
-import {Col, Row} from 'react-bootstrap';
+import {Col, Row, FormGroup, FormControl, Button} from 'react-bootstrap';
 import PageHeader from '../PageHeader/PageHeader';
 import api from '../../configs/api';
 import fetcher from '../../helpers/fetch';
@@ -39,9 +39,29 @@ export default class QuestionPage extends Component {
         <Row>
           <Col md={9}>
             <Message {...questionMessage} isQuestion={true}/>
-            {answers.map((answer, i) =>
-              <Message {...answer} key={i}/>
-            )}
+            <div className={bem.elem('header')}>
+              Answers
+            </div>
+            <div className={bem.elem('answers')}>
+              {answers.map(answer =>
+                <Message {...answer} key={answer.id}/>
+              )}
+              {answers.length === 0 &&
+              <div className={bem.elem('no-answers')}>
+                No answers yet. Be first!
+              </div>
+              }
+            </div>
+            <div className={bem.elem('header')}>
+              Answer the question
+            </div>
+            <br/>
+            <FormGroup controlId="formControlsTextarea">
+              <FormControl componentClass="textarea" placeholder="Write your answer" rows={5}/>
+            </FormGroup>
+            <Button type="submit">
+              Publish
+            </Button>
           </Col>
           <Col md={3}>
             <RightSidebar views={question.views} published={question.published}/>

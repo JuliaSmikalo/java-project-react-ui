@@ -1,0 +1,122 @@
+{
+  "success": true,
+  "body": [
+    {
+      "id": 1,
+      "title": "Nulla lobortis, ex sed vulputate auctor?",
+      "tags": [
+        "ultricies",
+        "tag 2",
+        "tag 3"
+      ],
+      "rating": 0,
+      "views": 21,
+      "answers": 1,
+      "approved": false,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula arcu eget faucibus tempor. Nulla lobortis, ex sed vulputate auctor, lacus lorem hendrerit ex, id malesuada eros enim non felis. Fusce egestas et massa in semper. Nunc congue tincidunt leo accumsan varius. Cras neque nibh, iaculis sit amet varius auctor, auctor id lorem. Phasellus eget ipsum sagittis, laoreet augue vitae, dictum metus. Integer sodales pellentesque tortor, ut sollicitudin turpis. Morbi faucibus ornare aliquet. Sed a mi risus. Donec elit mauris, dapibus vel sapien non, sollicitudin posuere odio. Fusce in massa vehicula, rhoncus mauris at, accumsan diam. Duis sit amet tempus massa. Integer tristique ut turpis a tincidunt. Praesent ac mauris vulputate, gravida felis non, egestas diam.",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "published": "2017-11-21T13:05:13.987Z"
+    },
+    {
+      "id": 2,
+      "rating": -1,
+      "views": 7,
+      "approved": false,
+      "title": "Long title 2",
+      "text": "Very long title 2",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "tags": ["ultricies", "222", "3"],
+      "published": "2017-11-21T13:05:13.987Z"
+    },
+    {
+      "id": 2,
+      "title": "Ut vel imperdiet justo?",
+      "tags": [
+        "imperdiet",
+        "justo"
+      ],
+      "rating": -2,
+      "views": 1,
+      "answers": 21,
+      "approved": false,
+      "text": "Aliquam vel elit at odio interdum tempus. Praesent suscipit blandit odio in accumsan. Morbi sed dolor rutrum, cursus lacus sed, suscipit eros. Praesent in sem semper, cursus lacus ut, volutpat ipsum. Proin pulvinar, erat egestas facilisis congue, tortor odio hendrerit dolor, et pulvinar lorem ante id est.",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "published": "2017-11-21T13:05:13.987Z"
+    },
+    {
+      "id": 3,
+      "title": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas?",
+      "tags": [
+        "habitant"
+      ],
+      "rating": 0,
+      "answers": 1,
+      "views": 21,
+      "approved": false,
+      "text": "Suspendisse sapien nisi, mattis at malesuada sit amet, blandit quis enim. Fusce hendrerit eget lectus in condimentum. Mauris pretium vulputate elit, in viverra sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse scelerisque tortor eu tempus faucibus. Phasellus sodales luctus velit. Ut rhoncus nulla eget neque aliquet molestie. Praesent ac tellus est. Nam aliquam ornare sem sed ultricies. Pellentesque vitae velit at mi varius lobortis sed quis nunc. Cras eget velit at lorem blandit convallis. Aenean dignissim placerat auctor.",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "published": "2017-11-21T13:05:13.987Z"
+    },
+    {
+      "id": 4,
+      "title": "Long consectetur adipiscing elit",
+      "tags": [
+        "tag 1",
+        "tag 2",
+        "tag 3"
+      ],
+      "rating": 12,
+      "answers": 111,
+      "views": 3921,
+      "approved": false,
+      "text": "Cras vehicula arcu eget faucibus tempor. Nulla lobortis, ex sed vulputate auctor, lacus lorem hendrerit ex, id malesuada eros enim non felis. Fusce egestas et massa in semper. Nunc congue tincidunt leo accumsan varius. Cras neque nibh, iaculis sit amet varius auctor, auctor id lorem. Phasellus eget ipsum sagittis, laoreet augue vitae, dictum metus. Integer sodales pellentesque tortor, ut sollicitudin turpis. Morbi faucibus ornare aliquet. Sed a mi risus. Donec elit mauris, dapibus vel sapien non, sollicitudin posuere odio. Fusce in massa vehicula, rhoncus mauris at, accumsan diam. Duis sit amet tempus massa. Integer tristique ut turpis a tincidunt. Praesent ac mauris vulputate, gravida felis non, egestas diam.",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "published": "2017-11-21T13:05:13.987Z"
+    },
+    {
+      "id": 5,
+      "title": "Long title",
+      "tags": [
+        "tag 1",
+        "tag 2",
+        "tag 3"
+      ],
+      "rating": 2,
+      "views": 21,
+      "approved": false,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula arcu eget faucibus tempor. Nulla lobortis, ex sed vulputate auctor, lacus lorem hendrerit ex, id malesuada eros enim non felis. Fusce egestas et massa in semper. Nunc congue tincidunt leo accumsan varius. Cras neque nibh, iaculis sit amet varius auctor, auctor id lorem. Phasellus eget ipsum sagittis, laoreet augue vitae, dictum metus. Integer sodales pellentesque tortor, ut sollicitudin turpis. Morbi faucibus ornare aliquet. Sed a mi risus. Donec elit mauris, dapibus vel sapien non, sollicitudin posuere odio. Fusce in massa vehicula, rhoncus mauris at, accumsan diam. Duis sit amet tempus massa. Integer tristique ut turpis a tincidunt. Praesent ac mauris vulputate, gravida felis non, egestas diam.",
+      "author": {
+        "id": 1,
+        "firstName": "Jesica",
+        "lastName": "Kilomdo",
+        "email": "example@email.com"
+      },
+      "published": "2017-11-21T13:05:13.987Z"
+    }
+  ]
+}

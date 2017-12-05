@@ -2,14 +2,18 @@
   "success": true,
   "body": {
     "id": 1,
-    "title": "Long title",
-    "tags": ["tag 1", "tag 2", "tag 3"],
+    "title": "Nulla lobortis, ex sed vulputate auctor?",
+    "tags": ["ultricies", "tag 2", "tag 3"],
     "rating": 2,
     "views": 21,
     "approved": false,
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula arcu eget faucibus tempor. Nulla lobortis, ex sed vulputate auctor, lacus lorem hendrerit ex, id malesuada eros enim non felis. Fusce egestas et massa in semper. Nunc congue tincidunt leo accumsan varius. Cras neque nibh, iaculis sit amet varius auctor, auctor id lorem. Phasellus eget ipsum sagittis, laoreet augue vitae, dictum metus. Integer sodales pellentesque tortor, ut sollicitudin turpis. Morbi faucibus ornare aliquet. Sed a mi risus. Donec elit mauris, dapibus vel sapien non, sollicitudin posuere odio. Fusce in massa vehicula, rhoncus mauris at, accumsan diam. Duis sit amet tempus massa. Integer tristique ut turpis a tincidunt. Praesent ac mauris vulputate, gravida felis non, egestas diam.",
-    "authorUuid": "1",
-    "comments": [],
+    "author": {
+      "id": 1,
+      "firstName": "Jesica",
+      "lastName": "Kilomdo",
+      "email": "example@email.com"
+    },
     "published": "2017-11-21T13:05:13.987Z",
     "answers": [
       {
@@ -17,8 +21,12 @@
         "rating": 12,
         "approved": true,
         "text": "Aliquam at sem nec nisi eleifend auctor ac non nunc. In ultricies massa vitae lacus mollis, sit amet venenatis massa semper. Integer convallis diam iaculis sagittis euismod. Curabitur nec lectus rutrum, gravida nisl sed, dictum velit. Vestibulum placerat dignissim risus id laoreet. Curabitur nec lacinia felis. Cras accumsan malesuada orci, et sodales odio ullamcorper non. Praesent malesuada porta suscipit. Nullam nulla lorem, auctor sed ultricies eget, consectetur et turpis.\nMaecenas convallis condimentum nulla, eget commodo nunc accumsan eget. Proin volutpat augue suscipit odio sollicitudin egestas. Vestibulum gravida vestibulum ante. Nulla finibus consectetur dolor. Donec eget tortor enim. Integer dictum dui risus, ultricies sodales velit dictum ac. Integer venenatis vel est at condimentum. Phasellus sed eleifend libero. Praesent fringilla rhoncus mi, in elementum diam accumsan ut. Suspendisse laoreet leo et lectus commodo pulvinar. Sed non volutpat orci. Donec ut tristique nulla. Vestibulum consequat faucibus molestie. Aenean lectus urna, facilisis ac accumsan ac, tempus nec lectus.",
-        "authorUuid": "1",
-        "comments": [],
+        "author": {
+          "id": 1,
+          "firstName": "Jesica",
+          "lastName": "Kilomdo",
+          "email": "example@email.com"
+        },
         "published": "2017-11-21T13:05:15.987Z"
       },
       {
@@ -26,8 +34,12 @@
         "rating": -1,
         "approved": false,
         "text": "Vivamus vitae nisi consequat, porttitor dui id, tincidunt leo. Sed fringilla semper est ac eleifend. Nam vestibulum ante rutrum dolor commodo tempus. Aliquam aliquam, libero non tincidunt condimentum, purus orci bibendum erat, a suscipit quam diam posuere erat. Vestibulum laoreet arcu et sapien hendrerit cursus at et lectus",
-        "authorUuid": "1",
-        "comments": [],
+        "author": {
+          "id": 1,
+          "firstName": "Jesica",
+          "lastName": "Kilomdo",
+          "email": "example@email.com"
+        },
         "published": "2017-11-23T13:05:16.987Z"
       }
     ]

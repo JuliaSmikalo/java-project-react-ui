@@ -48,6 +48,8 @@ export default class Header extends Component {
           <Navbar.Form pullRight>
             {' '}
             <Link to={links.signup()} className="btn btn-default">Sign Up</Link>
+            {' '}
+            <Link to={links.ask()} className="btn btn-success">Ask</Link>
           </Navbar.Form>
           <ul className="nav navbar-nav navbar-right">
             <li role="presentation">

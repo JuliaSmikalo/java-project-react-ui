@@ -7,3 +7,45 @@
   padding-bottom: 150px;
   min-height: 100%
 }
+
+#heart{
+  margin: 60px auto 0 100px;
+  position: absolute;
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+#heart:before{
+  background: #f00;
+  border-top-left-radius: 70px 100px;
+  border-top-right-radius: 70px 100px;
+  content: "";
+  display: block;
+  height: 140px;
+  position: absolute;
+  width: 100px;
+  -webkit-transform: rotate(-50deg);
+}
+
+#heart:after{
+  background: #f00;
+  border-top-left-radius: 70px 100px;
+  border-top-right-radius: 70px 100px;
+  content: "";
+  display: block;
+  height: 140px;
+  margin-left: 42px;
+  width: 100px;
+  -webkit-transform: rotate(50deg);
+}
+
+@-webkit-keyframes pulse{
+  0%{
+    -webkit-transform: scale(0.98);
+  }
+  50%{
+    -webkit-transform: scale(1.2);
+  }
+  100%{
+    -webkit-transform: scale(0.98);
+  }
+}

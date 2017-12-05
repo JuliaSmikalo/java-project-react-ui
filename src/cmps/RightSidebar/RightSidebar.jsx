@@ -10,13 +10,13 @@ const bem = new BEM('right-sidebar');
 
 export default class RightSidebar extends Component {
   render() {
-    const {published, views} = this.props;
+    const {published, views = 0} = this.props;
 
     return (
-      <sidebar className={bem}>
-        <p>
+      <div className={bem}>
+        {published && <p>
           asked <strong><RelativeTime value={published}/></strong>
-        </p>
+        </p>}
         <p>
           viewed <strong>{views} times</strong>
         </p>
@@ -27,7 +27,7 @@ export default class RightSidebar extends Component {
           <RelatedItem score={-1} approved link={links.question(2)} title='Switching to Portrait ViewController from LandScape ViewController'/>
           <RelatedItem score={2} link={links.question(3)} title='GameCenter authentication in landscape-only app throws UIApplicationInvalidInterfaceOrientation'/>
         </section>
-      </sidebar>
+      </div>
     );
   }
 }

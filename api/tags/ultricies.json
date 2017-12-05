@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "body": {
+    "id": 1,
+    "name": "ultricies",
+    "description": "Suspendisse ultrices a nisi a ultricies. Morbi dolor neque, dignissim a enim sit amet, scelerisque mattis sapien. Vivamus semper laoreet nunc vel tempus.",
+    "questions": [
+      {
+        "id": 1,
+        "title": "Nulla lobortis, ex sed vulputate auctor?",
+        "tags": [
+          "tag 1",
+          "tag 2",
+          "tag 3"
+        ],
+        "rating": 0,
+        "views": 21,
+        "answers": 1,
+        "approved": false,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula arcu eget faucibus tempor. Nulla lobortis, ex sed vulputate auctor, lacus lorem hendrerit ex, id malesuada eros enim non felis. Fusce egestas et massa in semper. Nunc congue tincidunt leo accumsan varius. Cras neque nibh, iaculis sit amet varius auctor, auctor id lorem. Phasellus eget ipsum sagittis, laoreet augue vitae, dictum metus. Integer sodales pellentesque tortor, ut sollicitudin turpis. Morbi faucibus ornare aliquet. Sed a mi risus. Donec elit mauris, dapibus vel sapien non, sollicitudin posuere odio. Fusce in massa vehicula, rhoncus mauris at, accumsan diam. Duis sit amet tempus massa. Integer tristique ut turpis a tincidunt. Praesent ac mauris vulputate, gravida felis non, egestas diam.",
+        "author": {
+          "id": 1,
+          "firstName": "Jesica",
+          "lastName": "Kilomdo",
+          "email": "example@email.com"
+        },
+        "published": "2017-11-21T13:05:13.987Z"
+      },
+      {
+        "id": 2,
+        "rating": -1,
+        "views": 7,
+        "approved": false,
+        "title": "Long title 2",
+        "text": "Very long title 2",
+        "author": {
+          "id": 1,
+          "firstName": "Jesica",
+          "lastName": "Kilomdo",
+          "email": "example@email.com"
+        },
+        "tags": ["1", "222", "3"],
+        "published": "2017-11-21T13:05:13.987Z"
+      }
+    ]
+  }
+}

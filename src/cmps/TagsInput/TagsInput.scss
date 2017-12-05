@@ -1,0 +1,16 @@
+.tags-input {
+  &__tag-label {
+    margin-right: 0.5em;
+
+    & + .ReactTags__tagInput {
+      margin-top: 0.5em;
+      display: block;
+    }
+
+    & .ReactTags__remove {
+      padding-left: 0.5em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
